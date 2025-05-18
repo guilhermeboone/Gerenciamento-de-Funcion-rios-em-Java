@@ -35,7 +35,7 @@ System.out.println("5 - Desativar funcionário");
 System.out.println("0 - Sair");
 System.out.print("Escolha uma opção: ");
 opcao = scanner.nextInt();
-scanner.nextLine(); // limpar buffer
+scanner.nextLine(); 
 
 switch (opcao) {
 case 1:
@@ -49,7 +49,7 @@ case 1:
     String cargo = scanner.nextLine();
     System.out.print("Salário: ");
     double salario = scanner.nextDouble();
-    scanner.nextLine(); // limpar buffer
+    scanner.nextLine();
     funcionarios[totalFuncionarios] = new Funcionario(nome, cargo, salario);
     totalFuncionarios++;
     System.out.println("Funcionário cadastrado com sucesso.");
@@ -89,10 +89,10 @@ case 4:
     if (funcionarios[i].getNome().equalsIgnoreCase(nomeAumento)) {
     System.out.print("Percentual de aumento: ");
     double perc = scanner.nextDouble();
-    scanner.nextLine(); // limpar buffer
+    scanner.nextLine(); 
     funcionarios[i].aumentarSalario(perc);
     System.out.println("Salário atualizado.");
-    encontradoSalario = true;
+    encontradoSalario = true;fr
     break;
     }
     }
